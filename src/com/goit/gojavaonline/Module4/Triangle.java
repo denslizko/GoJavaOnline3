@@ -1,23 +1,16 @@
 package com.goit.gojavaonline.Module4;
 
 
-public class Triangle {
+class Triangle {
 
-    private int sideA;
-    private int sideB;
-    private int sideC;
-    private int Unknown;
-    private double areaOfTriangle;
+    private double area;
 
-    Triangle(int sideA, int sideB, int sideC){
-        this.sideA = sideA;
-        this.sideB = sideB;
-        this.sideC = sideC;
-        Unknown = (sideA+sideB+sideC)/2;
-        areaOfTriangle = Math.sqrt(Unknown *(Unknown-sideA)*(Unknown-sideB)*(Unknown-sideC));
+    Triangle(double sideA, double sideB, double sideC) {
+        double halfPerimeter = (sideA + sideB + sideC) / 2;
+        area = Math.sqrt(halfPerimeter * (halfPerimeter - sideA) * (halfPerimeter - sideB) * (halfPerimeter - sideC));
     }
 
-    public double getAreaOfTriangle() {
-        return areaOfTriangle;
+    public double getArea() {
+        return area;
     }
 }

@@ -2,16 +2,14 @@ package com.goit.gojavaonline.Module4;
 
 public class Circle {
 
-    private int radius;
-    private double areaOfCircle;
+    private double area;
 
-    Circle(int radius){
-        this.radius = radius;
-        areaOfCircle = Math.PI*radius*radius;
+    Circle(double radius){
+        area = Math.PI*radius*radius;
 
     }
 
-    public double getAreaOfCircle() {
-        return areaOfCircle;
+    public double getArea() {
+        return area;
     }
 }

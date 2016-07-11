@@ -1,18 +1,14 @@
 package com.goit.gojavaonline.Module4;
 
 
-public class Rectangle {
-    int sideA;
-    int sideB;
-    private int areaOfRectangle;
+class Rectangle {
+    private double area;
 
-    Rectangle(int sideA, int sideB){
-        this.sideA=sideA;
-        this.sideB=sideB;
-        areaOfRectangle=sideA*sideB;
+    Rectangle(double sideA, double sideB){
+        area =sideA*sideB;
     }
 
-    public int getAreaOfRectangle() {
-        return areaOfRectangle;
+    double getArea() {
+        return area;
     }
 }
