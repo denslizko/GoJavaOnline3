@@ -8,7 +8,6 @@ public class Circle {
     Circle(double radius){
         this.radius = radius;
         area = Math.PI*radius*radius;
-
     }
 
     public double getRadius() {
